@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SkillHub · Make room for something new</title>
+  <link rel="stylesheet" href="/styles.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="header"><a class="brand" href="/" aria-label="SkillHub home"><span class="brand-icon">S<span>↗</span></span>SkillHub<span class="brand-dot">.</span></a>
+    <nav aria-label="Main navigation"><button class="nav active" id="browse-tab">Workshops</button><button class="nav" id="mine-tab" hidden>My enrollments</button></nav>
+    <div class="account"><span id="account-name"></span><button id="signin" class="button small">Sign in <span>↗</span></button><button id="signout" class="button secondary small" hidden>Sign out</button></div>
+  </header>
+  <main>
+    <section class="hero" id="hero"><div class="hero-copy"><p class="eyebrow"><span class="green-dot"></span> SMALL GROUPS. REAL POSSIBILITIES.</p><h1>Make room for<br>something <em>new.</em></h1><p class="intro">Learn by doing. Meet people who share your curiosity. Find your next in-person workshop at SkillHub.</p><a class="button" href="#workshops">Find your workshop <span>↓</span></a><div class="hero-note"><span class="avatars"><b>J</b><b>L</b><b>A</b></span><span>Good company.<br><strong>Even better skills.</strong></span></div></div><div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-tag">A LITTLE CURIOSITY GOES A LONG WAY</div><div class="art-sticker">TRY<br>SOMETHING<br><i>different.</i><span>✳</span></div><div class="art-caption"><span>01 / YOUR NEXT CHAPTER</span><span>↗</span></div></div></section>
+    <section class="catalog-section" id="workshops"><div class="section-heading"><div><p class="eyebrow">LEARN SOMETHING THAT STAYS WITH YOU</p><h2 id="section-title">Upcoming workshops<span>.</span></h2></div><label class="search" id="search-label"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search a skill, title or instructor" aria-label="Search workshops"></label></div><p class="section-note" id="section-note">In-person sessions. Experienced instructors. A seat with your name on it.</p><div class="results-bar"><span id="results-count" aria-live="polite">Loading workshops…</span><span>ALL TIMES · BOGOTÁ (UTC−5)</span></div><div id="content" class="cards" aria-live="polite"></div></section>
+  </main>
+  <footer><a class="brand" href="/">SkillHub<span class="brand-dot">.</span></a><p>Stay curious. Keep growing.</p><a href="/swagger">API documentation ↗</a></footer>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <dialog id="auth-dialog"><form id="auth-form"><button class="close" type="button" id="close-dialog" aria-label="Close">×</button><p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p><h2 id="auth-title">Welcome back.</h2><p id="auth-subtitle">Sign in to save your seat.</p><label id="fullname-label" hidden>Full name<input id="fullname" name="fullname" autocomplete="name" minlength="2" maxlength="150"></label><label>Email address<input id="email" name="email" type="email" autocomplete="username" required maxlength="254"></label><label>Password<input id="password" name="password" type="password" autocomplete="current-password" required maxlength="128"></label><p id="password-help" class="help" hidden>At least 10 characters, including uppercase, lowercase, a number and a symbol.</p><p id="auth-error" class="form-error" role="alert"></p><button class="button full" type="submit" id="auth-submit">Sign in ↗</button><button class="text-button" type="button" id="switch-auth">New here? Create an account</button></form></dialog>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "skillhub-browser-checks",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": { "test": "node participant-flow.cjs" },
+  "devDependencies": { "playwright": "1.64.1" }
+}
